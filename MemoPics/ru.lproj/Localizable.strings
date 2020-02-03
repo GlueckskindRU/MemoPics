@@ -1,0 +1,44 @@
+/* Alert.Ok.Action.Title */
+"okAction.Title" = "Ок";
+
+/* Text.Label */
+"CurrentRound.Label" = "Текущий раунд";
+
+/* ErrorHandle */
+"defaultErrorValue.ErrorText" = "Произошла непонятная ошибка. Просьба обратиться к разработчику.";
+
+/* ErrorHandle */
+"incorrectCountValue.ErrorText" = "Установлено отрицательное количество загадываемых элементов.";
+
+/* Title.Button */
+"Memorized.Button" = "Запомнил";
+
+/* Title.Button */
+"Save.Button" = "Сохранить";
+
+/* Text.Label */
+"SettingsTitle.Label" = "Выберите длительность игры в секундах";
+
+/* Title.Button */
+"Start.Button" = "Начать";
+
+/* Text.Label */
+"TotalFalseTaps.Label" = "Количество неправильных попыток";
+
+/* Text.Label */
+"TotalRoundsPlayed.Label" = "Всего раундов закончено";
+
+/* Text.Label */
+"TotalTaps.Label" = "Общее количество попыток";
+
+/* ErrorHandle */
+"whereContainerCountIsLessWhanWhatContainerCount.ErrorText" = "Количество элементов среди которых необходимо угадывать установлено меньше, чем количество угадываемых элементов.";
+
+/* RecordsScaleTitle */
+"superman" = "Супермен";
+"professor" = "Профессор";
+"master" = "Магистр";
+"bachelor" = "Бакалавр";
+"student" = "Студент";
+"matriculant" = "Абитуриент";
+"novice" = "Новичок";

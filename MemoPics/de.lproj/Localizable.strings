@@ -1,0 +1,44 @@
+/* Alert.Ok.Action.Title */
+"okAction.Title" = "Ok";
+
+/* Text.Label */
+"CurrentRound.Label" = "Aktuelle Runde";
+
+/* ErrorHandle */
+"defaultErrorValue.ErrorText" = "Es liegt ein unverständlicher Irrtum vor. Bitte kontaktieren Sie den Entwickler.";
+
+/* ErrorHandle */
+"incorrectCountValue.ErrorText" = "Die negative Anzahl der ausgeblendeten Elemente wurde eingestellt.";
+
+/* Title.Button */
+"Memorized.Button" = "Auswendig gelernt";
+
+/* Title.Button */
+"Save.Button" = "Speichern";
+
+/* Text.Label */
+"SettingsTitle.Label" = "Wählen Sie die Länge des Spiels in Sekunden";
+
+/* Title.Button */
+"Start.Button" = "Start";
+
+/* Text.Label */
+"TotalFalseTaps.Label" = "Anzahl der falschen Versuche";
+
+/* Text.Label */
+"TotalRoundsPlayed.Label" = "Beendete Runden";
+
+/* Text.Label */
+"TotalTaps.Label" = "Gesamtzahl der Versuche";
+
+/* ErrorHandle */
+"whereContainerCountIsLessWhanWhatContainerCount.ErrorText" = "Die Anzahl der Elemente, unter denen man raten muss, ist kleiner als die Anzahl der erratenen Elemente.";
+
+/* RecordsScaleTitle */
+"superman" = "Superman";
+"professor" = "Professor";
+"master" = "Magister";
+"bachelor" = "Bachelor";
+"student" = "Student";
+"matriculant" = "Studienbewerber";
+"novice" = "Anfänger";

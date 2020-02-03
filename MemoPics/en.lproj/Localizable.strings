@@ -1,0 +1,44 @@
+/* Alert.Ok.Action.Title */
+"okAction.Title" = "Ok";
+
+/* Text.Label */
+"CurrentRound.Label" = "Current round";
+
+/* ErrorHandle */
+"defaultErrorValue.ErrorText" = "There's been an incomprehensible error. Please contact the developer.";
+
+/* ErrorHandle */
+"incorrectCountValue.ErrorText" = "The negative number of hidden elements has been set.";
+
+/* Title.Button */
+"Memorized.Button" = "Memorized";
+
+/* Title.Button */
+"Save.Button" = "Save";
+
+/* Text.Label */
+"SettingsTitle.Label" = "Select the length of the game in seconds";
+
+/* Title.Button */
+"Start.Button" = "Start";
+
+/* Text.Label */
+"TotalFalseTaps.Label" = "Number of wrong tries";
+
+/* Text.Label */
+"TotalRoundsPlayed.Label" = "Finished rounds";
+
+/* Text.Label */
+"TotalTaps.Label" = "Total number of attempts";
+
+/* ErrorHandle */
+"whereContainerCountIsLessWhanWhatContainerCount.ErrorText" = "The number of elements among which it is necessary to guess is less than the number of guessed elements.";
+
+/* RecordsScaleTitle */
+"superman" = "Superman";
+"professor" = "Professor";
+"master" = "Master's degree";
+"bachelor" = "Bachelor";
+"student" = "Student";
+"matriculant" = "Matriculant";
+"novice" = "Novice";
