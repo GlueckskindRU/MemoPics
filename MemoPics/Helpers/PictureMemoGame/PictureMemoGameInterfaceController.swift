@@ -273,7 +273,7 @@ extension PictureMemoGameInterfaceController {
         countDownTimer?.invalidate()
         countDownTimer = nil
         let recordsCalculation = RecordsCalculation(finishedRounds: gameEngine.getFinishedRounds(), gameDuration: gameDuration)
-        let totalText = "\(recordsCalculation.getRecordsTitle())\n\(NSLocalizedString("TotalRoundsPlayed.Label", comment: "Text.Label")): \(gameEngine.getFinishedRounds())\n\(NSLocalizedString("TotalTaps.Label", comment: "Text.Label")): \(gameEngine.getTotalNumberOfTaps())\n\(NSLocalizedString("TotalFalseTaps.Label", comment: "Text.Label")): \(gameEngine.getNumberOfFalseTaps())"
+        let totalText = "\(recordsCalculation.getRecordsTitle())\n\(NSLocalizedString("TotalRoundsPlayed.Label", comment: "Text.Label")): \(gameEngine.getFinishedRounds())\n\(NSLocalizedString("TotalFalseTaps.Label", comment: "Text.Label")): \(gameEngine.getNumberOfFalseTaps())"
         totalsLabel.text = totalText
         countDownLabel.isHidden = true
     }

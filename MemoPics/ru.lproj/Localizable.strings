@@ -23,13 +23,18 @@
 "Start.Button" = "Начать";
 
 /* Text.Label */
-"TotalFalseTaps.Label" = "Количество неправильных попыток";
+"TotalFalseTaps.Label" = "Неправильных попыток";
 
 /* Text.Label */
-"TotalRoundsPlayed.Label" = "Всего раундов закончено";
+"TotalRoundsPlayed.Label" = "Раундов";
 
 /* Text.Label */
 "TotalTaps.Label" = "Общее количество попыток";
+
+/* Text.Label.Result */
+"SameResult.Label" = "Результат подтверждён";
+"BetterResult.Label" = "Результат улучшен";
+"WorseResult.Label" = "Результат стал хуже";
 
 /* ErrorHandle */
 "whereContainerCountIsLessWhanWhatContainerCount.ErrorText" = "Количество элементов среди которых необходимо угадывать установлено меньше, чем количество угадываемых элементов.";

@@ -23,13 +23,18 @@
 "Start.Button" = "Start";
 
 /* Text.Label */
-"TotalFalseTaps.Label" = "Anzahl der falschen Versuche";
+"TotalFalseTaps.Label" = "Falschen Versuche";
 
 /* Text.Label */
-"TotalRoundsPlayed.Label" = "Beendete Runden";
+"TotalRoundsPlayed.Label" = "Runden";
 
 /* Text.Label */
 "TotalTaps.Label" = "Gesamtzahl der Versuche";
+
+/* Text.Label.Result */
+"SameResult.Label" = "Das Ergebnis ist bestätigt";
+"BetterResult.Label" = "Das Ergebnis ist verbessert";
+"WorseResult.Label" = "Das Ergebnis ist schlechter";
 
 /* ErrorHandle */
 "whereContainerCountIsLessWhanWhatContainerCount.ErrorText" = "Die Anzahl der Elemente, unter denen man raten muss, ist kleiner als die Anzahl der erratenen Elemente.";

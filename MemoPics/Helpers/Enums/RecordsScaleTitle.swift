@@ -9,7 +9,6 @@
 import Foundation
 
 enum RecordsScaleTitle: String, CaseIterable {
-//    case superman = NSLocalizedString("RecordsScaleTitle.Superman", comment: "RecordsScaleTitle")
     case superman
     case professor
     case master

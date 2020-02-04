@@ -10,4 +10,5 @@ import Foundation
 
 enum AuxiliaryStringKeys: String {
     case gameDurutionSettingsKey = "GameDuration"
+    case lastRecordSettingsKey = "LastSavedRecordsScale"
 }

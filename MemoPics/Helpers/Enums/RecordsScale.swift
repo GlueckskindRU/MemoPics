@@ -17,3 +17,15 @@ enum RecordsScale: Double, CaseIterable {
     case matriculant = 3
     case novice = 4
 }
+
+extension RecordsScale: Comparable {
+    static func < (lhs: RecordsScale, rhs: RecordsScale) -> Bool {
+        return lhs.rawValue < rhs.rawValue
+    }
+}
+
+extension RecordsScale: Equatable {
+    static func == (lhs: RecordsScale, rhs: RecordsScale) -> Bool {
+        return lhs.rawValue == rhs.rawValue
+    }
+}

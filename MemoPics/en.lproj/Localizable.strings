@@ -23,13 +23,18 @@
 "Start.Button" = "Start";
 
 /* Text.Label */
-"TotalFalseTaps.Label" = "Number of wrong tries";
+"TotalFalseTaps.Label" = "Wrong tries";
 
 /* Text.Label */
-"TotalRoundsPlayed.Label" = "Finished rounds";
+"TotalRoundsPlayed.Label" = "Rounds";
 
 /* Text.Label */
 "TotalTaps.Label" = "Total number of attempts";
+
+/* Text.Label.Result */
+"SameResult.Label" = "Result confirmed";
+"BetterResult.Label" = "The result is improved";
+"WorseResult.Label" = "The result is worse";
 
 /* ErrorHandle */
 "whereContainerCountIsLessWhanWhatContainerCount.ErrorText" = "The number of elements among which it is necessary to guess is less than the number of guessed elements.";
