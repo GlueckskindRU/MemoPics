@@ -1,6 +1,9 @@
 /* Alert.Ok.Action.Title */
 "okAction.Title" = "Ок";
 
+/* CardsMemorizing.Title */
+"cardsMemorizing.Message" = "Здесь будт открываться дополнительная игра по запоминанию карт";
+
 /* Text.Label */
 "CurrentRound.Label" = "Текущий раунд";
 
@@ -9,6 +12,12 @@
 
 /* ErrorHandle */
 "incorrectCountValue.ErrorText" = "Установлено отрицательное количество загадываемых элементов.";
+
+/* Title.Button */
+"PictureMemGame.Button" = "Запоминание картинок";
+
+/* Title.Button */
+"CardsMemoGame.Button" = "Запоминание карт";
 
 /* Title.Button */
 "Memorized.Button" = "Запомнил";

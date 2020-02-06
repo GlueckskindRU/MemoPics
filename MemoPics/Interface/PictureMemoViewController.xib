@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <viewController id="TG5-oK-hWZ" customClass="PictureMemoViewController" customModule="MemoPics">
+            <view key="view" contentMode="scaleToFill" id="3S5-zZ-x8Y">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v33-1Q-Sbv">
+                        <rect key="frame" x="16" y="126" width="382" height="297"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLd-Dd-Xnh">
+                        <rect key="frame" x="8" y="447" width="398" height="2"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="N0d-cY-vlf"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bfz-v4-6VA">
+                        <rect key="frame" x="16" y="473" width="382" height="307"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zZ3-z9-7gk">
+                        <rect key="frame" x="16" y="796" width="382" height="50"/>
+                        <color key="backgroundColor" name="MainAppColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="isW-9c-DII"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P0G-xb-UgU">
+                        <rect key="frame" x="16" y="60" width="382" height="50"/>
+                        <color key="backgroundColor" name="MainAppColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="50" id="Jbz-az-cZj"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hfc-mX-ydv">
+                        <rect key="frame" x="8" y="60" width="398" height="786"/>
+                        <color key="backgroundColor" name="MainAppColor"/>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="MainAppColor"/>
+                <constraints>
+                    <constraint firstItem="v33-1Q-Sbv" firstAttribute="leading" secondItem="6vz-ew-e2P" secondAttribute="leading" constant="16" id="7lL-gL-OXY"/>
+                    <constraint firstItem="zLd-Dd-Xnh" firstAttribute="leading" secondItem="6vz-ew-e2P" secondAttribute="leading" constant="8" id="8RR-Zu-aBX"/>
+                    <constraint firstItem="6vz-ew-e2P" firstAttribute="trailing" secondItem="zLd-Dd-Xnh" secondAttribute="trailing" constant="8" id="Ard-aQ-dp1"/>
+                    <constraint firstItem="6vz-ew-e2P" firstAttribute="bottom" secondItem="zZ3-z9-7gk" secondAttribute="bottom" constant="16" id="Bne-mT-Woz"/>
+                    <constraint firstItem="Bfz-v4-6VA" firstAttribute="leading" secondItem="6vz-ew-e2P" secondAttribute="leading" constant="16" id="KXh-oF-bMk"/>
+                    <constraint firstItem="zLd-Dd-Xnh" firstAttribute="centerY" secondItem="3S5-zZ-x8Y" secondAttribute="centerY" id="KZ7-Nc-QoK"/>
+                    <constraint firstItem="Bfz-v4-6VA" firstAttribute="top" secondItem="zLd-Dd-Xnh" secondAttribute="bottom" constant="24" id="L0i-dq-PCd"/>
+                    <constraint firstItem="P0G-xb-UgU" firstAttribute="top" secondItem="6vz-ew-e2P" secondAttribute="top" constant="16" id="N4O-LJ-Jnr"/>
+                    <constraint firstItem="zZ3-z9-7gk" firstAttribute="leading" secondItem="Bfz-v4-6VA" secondAttribute="leading" id="Pps-0G-3ab"/>
+                    <constraint firstItem="6vz-ew-e2P" firstAttribute="trailing" secondItem="Bfz-v4-6VA" secondAttribute="trailing" constant="16" id="RTS-bH-1dr"/>
+                    <constraint firstItem="hfc-mX-ydv" firstAttribute="trailing" secondItem="zLd-Dd-Xnh" secondAttribute="trailing" id="V2J-wP-gA0"/>
+                    <constraint firstItem="v33-1Q-Sbv" firstAttribute="top" secondItem="P0G-xb-UgU" secondAttribute="bottom" constant="16" id="WS1-63-ZbH"/>
+                    <constraint firstItem="zZ3-z9-7gk" firstAttribute="top" secondItem="Bfz-v4-6VA" secondAttribute="bottom" constant="16" id="Zaa-Y3-YsG"/>
+                    <constraint firstItem="zZ3-z9-7gk" firstAttribute="trailing" secondItem="Bfz-v4-6VA" secondAttribute="trailing" id="bQ9-MS-4MA"/>
+                    <constraint firstItem="hfc-mX-ydv" firstAttribute="top" secondItem="P0G-xb-UgU" secondAttribute="top" id="gAy-F7-u0C"/>
+                    <constraint firstItem="P0G-xb-UgU" firstAttribute="trailing" secondItem="v33-1Q-Sbv" secondAttribute="trailing" id="hdi-Yc-D2k"/>
+                    <constraint firstItem="hfc-mX-ydv" firstAttribute="leading" secondItem="zLd-Dd-Xnh" secondAttribute="leading" id="hne-Rv-7F0"/>
+                    <constraint firstItem="hfc-mX-ydv" firstAttribute="bottom" secondItem="zZ3-z9-7gk" secondAttribute="bottom" id="nSJ-gY-yQf"/>
+                    <constraint firstItem="P0G-xb-UgU" firstAttribute="leading" secondItem="v33-1Q-Sbv" secondAttribute="leading" id="tte-4k-GC8"/>
+                    <constraint firstItem="6vz-ew-e2P" firstAttribute="trailing" secondItem="v33-1Q-Sbv" secondAttribute="trailing" constant="16" id="yLE-L5-ZJQ"/>
+                    <constraint firstItem="zLd-Dd-Xnh" firstAttribute="top" secondItem="v33-1Q-Sbv" secondAttribute="bottom" constant="24" id="ytJ-hD-YzL"/>
+                </constraints>
+                <viewLayoutGuide key="safeArea" id="6vz-ew-e2P"/>
+            </view>
+            <connections>
+                <outlet property="bottomAuxiliaryView" destination="zZ3-z9-7gk" id="WXg-2H-TfM"/>
+                <outlet property="curtainView" destination="hfc-mX-ydv" id="1Hf-u3-Wzt"/>
+                <outlet property="topAuxiliaryView" destination="P0G-xb-UgU" id="ucU-qo-Qcr"/>
+                <outlet property="whatView" destination="v33-1Q-Sbv" id="3kb-51-o4Z"/>
+                <outlet property="whereView" destination="Bfz-v4-6VA" id="Q9Y-Rj-h0j"/>
+            </connections>
+            <point key="canvasLocation" x="124.6376811594203" y="124.55357142857142"/>
+        </viewController>
+    </objects>
+    <resources>
+        <namedColor name="MainAppColor">
+            <color red="0.46274509803921571" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

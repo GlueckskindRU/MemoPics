@@ -13,6 +13,7 @@ class PictureMemoGameInterfaceController {
     fileprivate let gameEngine: PictureMemoGameEngine
     fileprivate let memorizedButton: UIButton
     fileprivate let startButton: UIButton
+    fileprivate let homeButton: UIButton
     fileprivate let roundsLabel: UILabel
     fileprivate let countDownLabel: UILabel
     fileprivate let totalsLabel: UILabel
@@ -40,7 +41,7 @@ class PictureMemoGameInterfaceController {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         view.backgroundColor = .white
-        view.layer.cornerRadius = 16
+        view.layer.cornerRadius = LayoutConsts.cornerRadius
         
         return view
     }()
@@ -95,6 +96,7 @@ class PictureMemoGameInterfaceController {
         self.gameDuration = settingsController.getGameDuration()
         
         self.memorizedButton = UIButton()
+        self.homeButton = UIButton()
         self.startButton = UIButton()
         self.roundsLabel = UILabel()
         self.countDownLabel = UILabel()
@@ -107,6 +109,9 @@ class PictureMemoGameInterfaceController {
         
         startButton.setup(with: NSLocalizedString("Start.Button", comment: "Title.Button"), target: self, action: #selector(startButtonTapped(sender:)))
         setupCurtainViewLayout()
+        
+        homeButton.setup(with: AuxiliaryImageNames.homeIcon.getImage(), target: self, action: #selector(homeButtonTapped(sender:)), tintColor: .white)
+        setupHomeButtonLayout()
         
         roundsLabel.setup(with: "")
         setupRoundsLabelLayout()
@@ -262,6 +267,15 @@ extension PictureMemoGameInterfaceController {
             viewController.showDialog(title: nil, message: AppError.whereContainerCountIsLessWhanWhatContainerCount.getErrorText())
         } catch {
             viewController.showDialog(title: nil, message: AppError.defaultErrorValue.getErrorText())
+        }
+    }
+    
+    @objc
+    fileprivate func homeButtonTapped(sender: UIButton) {
+        if let homeScreenVC = Bundle.main.loadNibNamed(String(describing: HomeScreenViewController.self), owner: nil, options: nil)?.first as? HomeScreenViewController {
+            homeScreenVC.modalTransitionStyle = .crossDissolve
+            homeScreenVC.modalPresentationStyle = .fullScreen
+            viewController.present(homeScreenVC, animated: true, completion: nil)
         }
     }
     
@@ -455,6 +469,17 @@ extension PictureMemoGameInterfaceController {
             totalsLabel.leadingAnchor.constraint(equalTo: curtainView.leadingAnchor, constant: 16),
             totalsLabel.centerXAnchor.constraint(equalTo: curtainView.centerXAnchor),
             startButton.topAnchor.constraint(equalTo: totalsLabel.bottomAnchor, constant: 16),
+        ])
+    }
+    
+    fileprivate func setupHomeButtonLayout() {
+        curtainView.addSubview(homeButton)
+        
+        NSLayoutConstraint.activate([
+            homeButton.topAnchor.constraint(equalTo: curtainView.topAnchor, constant: 16),
+            homeButton.leadingAnchor.constraint(equalTo: startButton.leadingAnchor, constant: -8),
+            homeButton.widthAnchor.constraint(equalToConstant: 80),
+            homeButton.heightAnchor.constraint(equalToConstant: 80),
         ])
     }
 }

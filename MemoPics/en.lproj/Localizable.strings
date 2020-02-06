@@ -1,6 +1,9 @@
 /* Alert.Ok.Action.Title */
 "okAction.Title" = "Ok";
 
+/* CardsMemorizing.Title */
+"cardsMemorizing.Message" = "Here will be opened an additional playing cards memorization game";
+
 /* Text.Label */
 "CurrentRound.Label" = "Current round";
 
@@ -9,6 +12,12 @@
 
 /* ErrorHandle */
 "incorrectCountValue.ErrorText" = "The negative number of hidden elements has been set.";
+
+/* Title.Button */
+"PictureMemGame.Button" = "Picture memorization";
+
+/* Title.Button */
+"CardsMemoGame.Button" = "Playing cards memorization";
 
 /* Title.Button */
 "Memorized.Button" = "Memorized";

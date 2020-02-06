@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  PictureMemoViewController.swift
 //  MemoPics
 //
 //  Created by Yuri Ivashin on 25.11.2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class PictureMemoViewController: UIViewController {
     @IBOutlet weak var whatView: UIView!
     @IBOutlet weak var whereView: UIView!
     @IBOutlet weak var topAuxiliaryView: UIView!
@@ -19,8 +19,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        whatView.layer.cornerRadius = 16
-        whereView.layer.cornerRadius = 16
+        whatView.layer.cornerRadius = LayoutConsts.cornerRadius
+        whereView.layer.cornerRadius = LayoutConsts.cornerRadius
         
         gic = PictureMemoGameInterfaceController(whatContainerView: whatView,
                                       whereContainerView: whereView,

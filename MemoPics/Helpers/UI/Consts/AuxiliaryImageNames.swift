@@ -11,6 +11,7 @@ import UIKit
 enum AuxiliaryImageNames: String {
     case questionMark = "Question Mark"
     case settingsIcon = "Settings"
+    case homeIcon = "Home"
     
     func getImage() -> UIImage {
         return UIImage(imageLiteralResourceName: self.rawValue)

@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        if let homeScreenVC = Bundle.main.loadNibNamed(String(describing: HomeScreenViewController.self), owner: nil, options: nil)?.first as? HomeScreenViewController {
+            window = UIWindow(frame: UIScreen.main.bounds)
+            window?.backgroundColor = .white
+            window?.rootViewController = homeScreenVC
+            window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 

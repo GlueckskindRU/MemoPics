@@ -1,6 +1,9 @@
 /* Alert.Ok.Action.Title */
 "okAction.Title" = "Ok";
 
+/* CardsMemorizing.Title */
+"cardsMemorizing.Message" = "Hier wird ein zusätzliches Spielkarten-Memory-Spiel eröffnet";
+
 /* Text.Label */
 "CurrentRound.Label" = "Aktuelle Runde";
 
@@ -9,6 +12,12 @@
 
 /* ErrorHandle */
 "incorrectCountValue.ErrorText" = "Die negative Anzahl der ausgeblendeten Elemente wurde eingestellt.";
+
+/* Title.Button */
+"PictureMemGame.Button" = "Erinnerung den Bilder";
+
+/* Title.Button */
+"CardsMemoGame.Button" = "Erinnerung den Spielkarten";
 
 /* Title.Button */
 "Memorized.Button" = "Auswendig gelernt";

@@ -15,14 +15,16 @@ extension UIButton {
         self.setTitleColor(.black, for: .normal)
         self.addTarget(target, action: action, for: .touchUpInside)
         self.backgroundColor = .white
-        self.layer.cornerRadius = 16
+        self.layer.cornerRadius = LayoutConsts.cornerRadius
     }
     
-    func setup(with image: UIImage, target: Any?, action: Selector) {
+    func setup(with image: UIImage, target: Any?, action: Selector, tintColor: UIColor) {
         self.translatesAutoresizingMaskIntoConstraints = false
         let buttonImage = image.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
         self.setImage(buttonImage, for: .normal)
-        self.tintColor = .black
+        self.contentVerticalAlignment = .fill
+        self.contentHorizontalAlignment = .fill
+        self.tintColor = tintColor
         self.addTarget(target, action: action, for: .touchUpInside)
     }
 }
