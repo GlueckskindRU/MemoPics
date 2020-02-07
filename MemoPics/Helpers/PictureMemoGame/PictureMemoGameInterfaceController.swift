@@ -36,6 +36,8 @@ class PictureMemoGameInterfaceController {
     fileprivate var countDownTimer: Timer?
     fileprivate var seconds: Int
     
+    fileprivate var startingCountDownView: StartingCountDownView?
+    
     lazy fileprivate var settingsView: UIView = {
         let view = UIView()
         
@@ -160,8 +162,7 @@ extension PictureMemoGameInterfaceController {
     fileprivate func startNewGame() throws {
         try gameEngine.initNewGame(for: gameDuration)
         
-        setupNewRound()
-        refreshGameDuration()
+        indicateStartingCountDownView(startValue: 3)
     }
     
     fileprivate func startNewRound() throws {
@@ -204,6 +205,21 @@ extension PictureMemoGameInterfaceController {
         gameDuration = settingsController.getGameDuration()
         seconds = gameDuration.rawValue
         countDownLabel.text = seconds == 60 ? "01:00" : "00:\(seconds)"
+    }
+    
+    fileprivate func indicateStartingCountDownView(startValue: Int) {
+        let startingCountDownView = StartingCountDownView(frame: self.viewController.view.frame)
+        viewController.view.addSubview(startingCountDownView)
+        NSLayoutConstraint.activate([
+            startingCountDownView.topAnchor.constraint(equalTo: viewController.view.topAnchor),
+            startingCountDownView.leadingAnchor.constraint(equalTo: viewController.view.leadingAnchor),
+            startingCountDownView.trailingAnchor.constraint(equalTo: viewController.view.trailingAnchor),
+            startingCountDownView.bottomAnchor.constraint(equalTo: viewController.view.bottomAnchor),
+        ])
+        startingCountDownView.startingCountDown = startValue
+        startingCountDownView.delegate = self
+        startingCountDownView.startCountDown()
+        self.startingCountDownView = startingCountDownView
     }
 }
 
@@ -299,7 +315,7 @@ extension PictureMemoGameInterfaceController {
         let secondsText: String
         if seconds < 10 {
             secondsText = "0\(seconds)"
-            countDownLabel.sizeAnimatedTransformation()
+            countDownLabel.sizeAnimatedTransformation(to: 2, with: 0.5)
         } else {
             secondsText = "\(seconds)"
         }
@@ -481,5 +497,15 @@ extension PictureMemoGameInterfaceController {
             homeButton.widthAnchor.constraint(equalToConstant: 80),
             homeButton.heightAnchor.constraint(equalToConstant: 80),
         ])
+    }
+}
+
+// MARK: - StartingCountDownView Delegate
+extension PictureMemoGameInterfaceController: StartingCountDownViewDelegate {
+    internal func startingCountDownViewDismiss() {
+        viewController.view.removeSubviews(of: StartingCountDownView.self)
+        
+        setupNewRound()
+        refreshGameDuration()
     }
 }

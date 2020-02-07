@@ -15,6 +15,8 @@
 		DA43E37E23E1AD6B0021E523 /* RecordsScaleTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43E37D23E1AD6B0021E523 /* RecordsScaleTitle.swift */; };
 		DA43E38023E1BE310021E523 /* RecordsCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43E37F23E1BE310021E523 /* RecordsCalculation.swift */; };
 		DA4A185623ED6ED600F915C4 /* PictureMemoGameConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A185523ED6ED600F915C4 /* PictureMemoGameConsts.swift */; };
+		DA4A185B23ED884100F915C4 /* StartingCountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A185A23ED884100F915C4 /* StartingCountDownView.swift */; };
+		DA4A185D23ED915D00F915C4 /* StartingCountDownViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A185C23ED915D00F915C4 /* StartingCountDownViewDelegate.swift */; };
 		DA816F2A23B537A30003FE03 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2923B537A30003FE03 /* CollectionViewDataSource.swift */; };
 		DA816F2C23B658BF0003FE03 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2B23B658BF0003FE03 /* UICollectionView.swift */; };
 		DA816F2E23B76A630003FE03 /* GameCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2D23B76A630003FE03 /* GameCollectionViewLayout.swift */; };
@@ -51,6 +53,8 @@
 		DA43E37D23E1AD6B0021E523 /* RecordsScaleTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsScaleTitle.swift; sourceTree = "<group>"; };
 		DA43E37F23E1BE310021E523 /* RecordsCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsCalculation.swift; sourceTree = "<group>"; };
 		DA4A185523ED6ED600F915C4 /* PictureMemoGameConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemoGameConsts.swift; sourceTree = "<group>"; };
+		DA4A185A23ED884100F915C4 /* StartingCountDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingCountDownView.swift; sourceTree = "<group>"; };
+		DA4A185C23ED915D00F915C4 /* StartingCountDownViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingCountDownViewDelegate.swift; sourceTree = "<group>"; };
 		DA816F2923B537A30003FE03 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		DA816F2B23B658BF0003FE03 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		DA816F2D23B76A630003FE03 /* GameCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewLayout.swift; sourceTree = "<group>"; };
@@ -115,6 +119,14 @@
 			path = GameConsts;
 			sourceTree = "<group>";
 		};
+		DA4A185923ED882C00F915C4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A185A23ED884100F915C4 /* StartingCountDownView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		DA816F2823B537860003FE03 /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +164,7 @@
 		DAA0ECCE238C66E3003CDE21 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				DA4A185923ED882C00F915C4 /* Views */,
 				DA4A185423ED6EAC00F915C4 /* GameConsts */,
 				DAEA58CD23EAD6370051E185 /* Consts */,
 				DA816F2823B537860003FE03 /* CollectionViews */,
@@ -162,6 +175,7 @@
 		DAA7D02523BF9F31004DF608 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				DA4A185C23ED915D00F915C4 /* StartingCountDownViewDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -337,6 +351,7 @@
 				DAA7D03123C7BBFA004DF608 /* SettingsController.swift in Sources */,
 				DA43E38023E1BE310021E523 /* RecordsCalculation.swift in Sources */,
 				DAE6B2F4238BDB0E00889902 /* AppDelegate.swift in Sources */,
+				DA4A185B23ED884100F915C4 /* StartingCountDownView.swift in Sources */,
 				DAA7D02B23C535BC004DF608 /* UILabel.swift in Sources */,
 				DA43E37823E044FC0021E523 /* UIViewController.swift in Sources */,
 				DAA0ECB0238C54BA003CDE21 /* AppError.swift in Sources */,
@@ -359,6 +374,7 @@
 				DA074A8F238C7A2F00CC1EF4 /* UIView.swift in Sources */,
 				DA074A8C238C768800CC1EF4 /* PictureMemoGameInterfaceController.swift in Sources */,
 				DA816F2A23B537A30003FE03 /* CollectionViewDataSource.swift in Sources */,
+				DA4A185D23ED915D00F915C4 /* StartingCountDownViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

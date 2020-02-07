@@ -30,14 +30,13 @@ extension UIView {
         self.layer.position = finalPosition
     }
     
-    func sizeAnimatedTransformation() {
-        let finishingScale = 2
+    func sizeAnimatedTransformation(to finishingScale: Int, with frequencyPerSecond: CFTimeInterval) {
         let transformAnimation = CABasicAnimation(keyPath: "transform.scale")
         transformAnimation.fromValue = 1
         transformAnimation.toValue = finishingScale
-        transformAnimation.duration = 0.5
+        transformAnimation.duration = frequencyPerSecond
         transformAnimation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-        transformAnimation.repeatCount = 2
+        transformAnimation.repeatCount = 1.0 / Float(frequencyPerSecond)
         transformAnimation.autoreverses = true
         
         self.layer.add(transformAnimation, forKey: "transform")
