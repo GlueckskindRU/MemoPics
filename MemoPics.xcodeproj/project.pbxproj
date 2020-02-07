@@ -14,6 +14,7 @@
 		DA43E37C23E1A85A0021E523 /* RecordsScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43E37B23E1A85A0021E523 /* RecordsScale.swift */; };
 		DA43E37E23E1AD6B0021E523 /* RecordsScaleTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43E37D23E1AD6B0021E523 /* RecordsScaleTitle.swift */; };
 		DA43E38023E1BE310021E523 /* RecordsCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43E37F23E1BE310021E523 /* RecordsCalculation.swift */; };
+		DA4A185623ED6ED600F915C4 /* PictureMemoGameConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A185523ED6ED600F915C4 /* PictureMemoGameConsts.swift */; };
 		DA816F2A23B537A30003FE03 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2923B537A30003FE03 /* CollectionViewDataSource.swift */; };
 		DA816F2C23B658BF0003FE03 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2B23B658BF0003FE03 /* UICollectionView.swift */; };
 		DA816F2E23B76A630003FE03 /* GameCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2D23B76A630003FE03 /* GameCollectionViewLayout.swift */; };
@@ -49,6 +50,7 @@
 		DA43E37B23E1A85A0021E523 /* RecordsScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsScale.swift; sourceTree = "<group>"; };
 		DA43E37D23E1AD6B0021E523 /* RecordsScaleTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsScaleTitle.swift; sourceTree = "<group>"; };
 		DA43E37F23E1BE310021E523 /* RecordsCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsCalculation.swift; sourceTree = "<group>"; };
+		DA4A185523ED6ED600F915C4 /* PictureMemoGameConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemoGameConsts.swift; sourceTree = "<group>"; };
 		DA816F2923B537A30003FE03 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		DA816F2B23B658BF0003FE03 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		DA816F2D23B76A630003FE03 /* GameCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewLayout.swift; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		DA4A185423ED6EAC00F915C4 /* GameConsts */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A185523ED6ED600F915C4 /* PictureMemoGameConsts.swift */,
+			);
+			path = GameConsts;
+			sourceTree = "<group>";
+		};
 		DA816F2823B537860003FE03 /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,6 +152,7 @@
 		DAA0ECCE238C66E3003CDE21 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				DA4A185423ED6EAC00F915C4 /* GameConsts */,
 				DAEA58CD23EAD6370051E185 /* Consts */,
 				DA816F2823B537860003FE03 /* CollectionViews */,
 			);
@@ -336,6 +347,7 @@
 				DA816F2C23B658BF0003FE03 /* UICollectionView.swift in Sources */,
 				DAA7D03323C7BD86004DF608 /* AuxiliaryStringKeys.swift in Sources */,
 				DAEA58D123EAD86A0051E185 /* ColorNames.swift in Sources */,
+				DA4A185623ED6ED600F915C4 /* PictureMemoGameConsts.swift in Sources */,
 				DA43E37C23E1A85A0021E523 /* RecordsScale.swift in Sources */,
 				DAA7D02423BF9424004DF608 /* ContainerType.swift in Sources */,
 				DA43E37E23E1AD6B0021E523 /* RecordsScaleTitle.swift in Sources */,

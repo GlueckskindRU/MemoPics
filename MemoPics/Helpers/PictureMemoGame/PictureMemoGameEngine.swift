@@ -15,9 +15,6 @@ class PictureMemoGameEngine {
     private var numberOfFalseTaps: Int = 0
     private var gameDuration = GameDurations.sec60
     private var shouldBeExtraElement: Bool = false
-    private let constantExtraNumbersForWhereToGuess: Int = 2
-    private let probabilityOfExtraWhatElement: Int = 20
-    private let probabilityOfExtraWhereElement: Int = 35
     
     private var numberOfIterations: Int {
         switch gameDuration {
@@ -181,15 +178,15 @@ class PictureMemoGameEngine {
     }
     
     private func getNumberOfWhatToGuess() -> Int {
-        let extraElement = Int.random(in: 0..<100) < probabilityOfExtraWhatElement ? 1 : 0
+        let extraElement = Int.random(in: 0..<100) < PictureMemoGameConsts.probabilityOfExtraWhatElement ? 1 : 0
         shouldBeExtraElement = extraElement == 1
         
         return currentIteration + 1 + extraElement
     }
     
     private func getNumberOfWhereToGuess(basedOn numberOfWhatToGuess: Int) -> Int {
-        let shouldBeExtraElement = Int.random(in: 0..<100) < probabilityOfExtraWhereElement ? 1 : 0
+        let shouldBeExtraElement = Int.random(in: 0..<100) < PictureMemoGameConsts.probabilityOfExtraWhereElement ? 1 : 0
 
-        return numberOfWhatToGuess + constantExtraNumbersForWhereToGuess + shouldBeExtraElement
+        return numberOfWhatToGuess + PictureMemoGameConsts.constantExtraNumbersForWhereToGuess + shouldBeExtraElement
     }
 }
