@@ -17,6 +17,7 @@
 		DA4A185623ED6ED600F915C4 /* PictureMemoGameConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A185523ED6ED600F915C4 /* PictureMemoGameConsts.swift */; };
 		DA4A185B23ED884100F915C4 /* StartingCountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A185A23ED884100F915C4 /* StartingCountDownView.swift */; };
 		DA4A185D23ED915D00F915C4 /* StartingCountDownViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A185C23ED915D00F915C4 /* StartingCountDownViewDelegate.swift */; };
+		DA4A186123F18BC200F915C4 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A186023F18BC200F915C4 /* UIDevice.swift */; };
 		DA816F2A23B537A30003FE03 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2923B537A30003FE03 /* CollectionViewDataSource.swift */; };
 		DA816F2C23B658BF0003FE03 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2B23B658BF0003FE03 /* UICollectionView.swift */; };
 		DA816F2E23B76A630003FE03 /* GameCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2D23B76A630003FE03 /* GameCollectionViewLayout.swift */; };
@@ -55,6 +56,7 @@
 		DA4A185523ED6ED600F915C4 /* PictureMemoGameConsts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemoGameConsts.swift; sourceTree = "<group>"; };
 		DA4A185A23ED884100F915C4 /* StartingCountDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingCountDownView.swift; sourceTree = "<group>"; };
 		DA4A185C23ED915D00F915C4 /* StartingCountDownViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingCountDownViewDelegate.swift; sourceTree = "<group>"; };
+		DA4A186023F18BC200F915C4 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
 		DA816F2923B537A30003FE03 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
 		DA816F2B23B658BF0003FE03 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		DA816F2D23B76A630003FE03 /* GameCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewLayout.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				DAA7D02823C53484004DF608 /* UIButton.swift */,
 				DAA7D02A23C535BC004DF608 /* UILabel.swift */,
 				DA43E37723E044FC0021E523 /* UIViewController.swift */,
+				DA4A186023F18BC200F915C4 /* UIDevice.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				DAA7D02423BF9424004DF608 /* ContainerType.swift in Sources */,
 				DA43E37E23E1AD6B0021E523 /* RecordsScaleTitle.swift in Sources */,
 				DAF12C6823AF3C42005B0F81 /* CollectionViewCell.swift in Sources */,
+				DA4A186123F18BC200F915C4 /* UIDevice.swift in Sources */,
 				DAEA58CF23EAD64C0051E185 /* LayoutConsts.swift in Sources */,
 				DAA0ECAB238C1F20003CDE21 /* PictureMemoViewController.swift in Sources */,
 				DA816F2E23B76A630003FE03 /* GameCollectionViewLayout.swift in Sources */,
@@ -525,7 +529,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 3BEPD83256;
 				INFOPLIST_FILE = MemoPics/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -545,7 +549,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 3BEPD83256;
 				INFOPLIST_FILE = MemoPics/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

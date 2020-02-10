@@ -131,14 +131,14 @@ class PictureMemoGameInterfaceController {
     func tapItemProcessing(element: GameElement, imageView: UIImageView) {
         if gameEngine.isElementToBeGuessed(element.getItem()) {
             if gameEngine.isAlreadyGuessed(element.getItem()) {
-                gameEngine.thisTapWasFalse()
-                imageView.shake()
+                falseTapProcessing(of: imageView)
             } else {
                 showGuessedItemInWhatCollectionView(element)
             }
             
             gameEngine.increaseNumberOfGuessedItems(for: element.getItem())
             if gameEngine.isRoundFinished() {
+                UIDevice.vibrate()
                 gameEngine.finishCurrentRound()
                 do {
                     try startNewRound()
@@ -151,8 +151,7 @@ class PictureMemoGameInterfaceController {
                 }
             }
         } else {
-            gameEngine.thisTapWasFalse()
-            imageView.shake()
+            falseTapProcessing(of: imageView)
         }
     }
 }
@@ -220,6 +219,12 @@ extension PictureMemoGameInterfaceController {
         startingCountDownView.delegate = self
         startingCountDownView.startCountDown()
         self.startingCountDownView = startingCountDownView
+    }
+    
+    fileprivate func falseTapProcessing(of imageView: UIImageView) {
+        gameEngine.thisTapWasFalse()
+        UIDevice.vibrate()
+        imageView.shake()
     }
 }
 
