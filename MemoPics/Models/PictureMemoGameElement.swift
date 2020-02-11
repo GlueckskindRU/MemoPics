@@ -1,5 +1,5 @@
 //
-//  GameElement.swift
+//  PictureMemoGameElement.swift
 //  MemoPics
 //
 //  Created by Yuri Ivashin on 04.01.2020.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct GameElement {
+struct PictureMemoGameElement {
     private let pictureItem: PictureItem
     private let containerType: ContainerType
     private var shouldBeHidden: Bool
@@ -67,8 +67,8 @@ struct GameElement {
     }
 }
 
-extension GameElement: Hashable {
-    static func ==(lhs: GameElement, rhs: GameElement) -> Bool {
+extension PictureMemoGameElement: Hashable {
+    static func ==(lhs: PictureMemoGameElement, rhs: PictureMemoGameElement) -> Bool {
         return lhs.pictureItem == rhs.pictureItem
     }
     

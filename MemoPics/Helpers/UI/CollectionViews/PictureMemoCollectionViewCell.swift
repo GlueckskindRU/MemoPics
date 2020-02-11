@@ -1,5 +1,5 @@
 //
-//  CollectionViewCell.swift
+//  PictureMemoCollectionViewCell.swift
 //  MemoPics
 //
 //  Created by Yuri Ivashin on 22.12.2019.
@@ -8,10 +8,10 @@
 
 import UIKit
 
-class CollectionViewCell: UICollectionViewCell {
+class PictureMemoCollectionViewCell: UICollectionViewCell {
     private var gameInterfaceController: PictureMemoGameInterfaceController?
     
-    var gameElement: GameElement?
+    var gameElement: PictureMemoGameElement?
     
     lazy private var imageView: UIImageView = {
         let imageView = UIImageView()
@@ -31,7 +31,7 @@ class CollectionViewCell: UICollectionViewCell {
         imageView.image = image
     }
     
-    func configure(with element: GameElement, gic: PictureMemoGameInterfaceController) {
+    func configure(with element: PictureMemoGameElement, gic: PictureMemoGameInterfaceController) {
         self.gameInterfaceController = gic
         self.gameElement = element
         imageView.image = element.getImage()

@@ -1,5 +1,5 @@
 //
-//  CollectionViewDataSource.swift
+//  PictureMemoCollectionViewDataSource.swift
 //  MemoPics
 //
 //  Created by Yuri Ivashin on 26.12.2019.
@@ -8,24 +8,24 @@
 
 import UIKit
 
-class CollectionViewDataSource: NSObject {
-    private let container: [GameElement]
+class PictureMemoCollectionViewDataSource: NSObject {
+    private let container: [PictureMemoGameElement]
     private let gameInterfaceController: PictureMemoGameInterfaceController
     
-    init(container: [GameElement], gameInterfaceController: PictureMemoGameInterfaceController) {
+    init(container: [PictureMemoGameElement], gameInterfaceController: PictureMemoGameInterfaceController) {
         self.container = container
         self.gameInterfaceController = gameInterfaceController
     }
 }
 
 // MARK: - CollectionView Data Source
-extension CollectionViewDataSource: UICollectionViewDataSource {
+extension PictureMemoCollectionViewDataSource: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return container.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueCell(of: CollectionViewCell.self, for: indexPath)
+        let cell = collectionView.dequeueCell(of: PictureMemoCollectionViewCell.self, for: indexPath)
         
         cell.configure(with: container[indexPath.row], gic: gameInterfaceController)
         

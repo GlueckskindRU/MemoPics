@@ -26,8 +26,8 @@ class PictureMemoGameInterfaceController {
     
     fileprivate var whatCollectionView: UICollectionView?
     fileprivate var whereCollectionView: UICollectionView?
-    fileprivate var whatCollectionViewDataSource: CollectionViewDataSource?
-    fileprivate var whereCollectionViewDataSource: CollectionViewDataSource?
+    fileprivate var whatCollectionViewDataSource: PictureMemoCollectionViewDataSource?
+    fileprivate var whereCollectionViewDataSource: PictureMemoCollectionViewDataSource?
     
     fileprivate let settingsController = (UIApplication.shared.delegate as! AppDelegate).settingsController
     fileprivate var gameDuration: GameDurations
@@ -128,7 +128,7 @@ class PictureMemoGameInterfaceController {
     }
     
 // MARK: - Public Functions
-    func tapItemProcessing(element: GameElement, imageView: UIImageView) {
+    func tapItemProcessing(element: PictureMemoGameElement, imageView: UIImageView) {
         if gameEngine.isElementToBeGuessed(element.getItem()) {
             if gameEngine.isAlreadyGuessed(element.getItem()) {
                 falseTapProcessing(of: imageView)
@@ -235,11 +235,11 @@ extension PictureMemoGameInterfaceController {
         roundsLabel.text = "\(NSLocalizedString("CurrentRound.Label", comment: "Text.Label")) \(gameEngine.getCurrentRound())"
     }
     
-    fileprivate func showGuessedItemInWhatCollectionView(_ element: GameElement) {
+    fileprivate func showGuessedItemInWhatCollectionView(_ element: PictureMemoGameElement) {
         self.whatCollectionView?.visibleCells.forEach( {
             (cell: UICollectionViewCell) in
             guard
-                let cell = cell as? CollectionViewCell else {
+                let cell = cell as? PictureMemoCollectionViewCell else {
                 return
             }
             
@@ -258,7 +258,7 @@ extension PictureMemoGameInterfaceController {
     fileprivate func memorizedButtonTapped(sender: UIButton) {
         self.whatCollectionView?.visibleCells.forEach( {
             (cell: UICollectionViewCell) in
-            guard let cell = cell as? CollectionViewCell else {
+            guard let cell = cell as? PictureMemoCollectionViewCell else {
                 return
             }
             
@@ -345,7 +345,7 @@ extension PictureMemoGameInterfaceController {
 extension PictureMemoGameInterfaceController {
     fileprivate func createWhatCollectionView() {
         let whatContainer = gameEngine.getWhat()
-        let flowLayout = GameCollectionViewLayout(numberOfElements: whatContainer.count)
+        let flowLayout = PictureMemoGameCollectionViewLayout(numberOfElements: whatContainer.count)
         
         let frame = CGRect(x: 0,
                            y: 0,
@@ -356,10 +356,10 @@ extension PictureMemoGameInterfaceController {
         whatCollectionView = UICollectionView(frame: frame, collectionViewLayout: flowLayout)
         
         whatCollectionView?.translatesAutoresizingMaskIntoConstraints = false
-        whatCollectionViewDataSource = CollectionViewDataSource(container: whatContainer, gameInterfaceController: self)
+        whatCollectionViewDataSource = PictureMemoCollectionViewDataSource(container: whatContainer, gameInterfaceController: self)
         whatCollectionView?.dataSource = whatCollectionViewDataSource
         whatCollectionView?.backgroundColor = whatContainerView.backgroundColor
-        whatCollectionView?.register(cellType: CollectionViewCell.self, nib: false)
+        whatCollectionView?.register(cellType: PictureMemoCollectionViewCell.self, nib: false)
     }
     
     fileprivate func setupWhatContainerViewLayout() {
@@ -379,7 +379,7 @@ extension PictureMemoGameInterfaceController {
     
     fileprivate func createWhereCollectionView() {
         let whereContainer = gameEngine.getWhere()
-        let flowLayout = GameCollectionViewLayout(numberOfElements: whereContainer.count)
+        let flowLayout = PictureMemoGameCollectionViewLayout(numberOfElements: whereContainer.count)
         
         let frame = CGRect(x: 0,
                            y: 0,
@@ -391,10 +391,10 @@ extension PictureMemoGameInterfaceController {
 
         whereCollectionView?.translatesAutoresizingMaskIntoConstraints = false
         
-        whereCollectionViewDataSource = CollectionViewDataSource(container: whereContainer, gameInterfaceController: self)
+        whereCollectionViewDataSource = PictureMemoCollectionViewDataSource(container: whereContainer, gameInterfaceController: self)
         whereCollectionView?.dataSource = whereCollectionViewDataSource
         whereCollectionView?.backgroundColor = whereContainerView.backgroundColor
-        whereCollectionView?.register(cellType: CollectionViewCell.self, nib: false)
+        whereCollectionView?.register(cellType: PictureMemoCollectionViewCell.self, nib: false)
     }
     
     fileprivate func setupWhereContainerViewLayout() {

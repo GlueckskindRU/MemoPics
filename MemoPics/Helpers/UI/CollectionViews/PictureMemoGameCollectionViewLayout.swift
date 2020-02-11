@@ -1,5 +1,5 @@
 //
-//  GameCollectionViewLayout.swift
+//  PictureMemoGameCollectionViewLayout.swift
 //  MemoPics
 //
 //  Created by Yuri Ivashin on 28.12.2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GameCollectionViewLayout: UICollectionViewLayout {
+class PictureMemoGameCollectionViewLayout: UICollectionViewLayout {
     private let numberOfElements: Int
     private let numberOfColumns: Int = 3
     private let cellPadding: CGFloat = 16

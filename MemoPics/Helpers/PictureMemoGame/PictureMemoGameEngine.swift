@@ -9,8 +9,8 @@
 import UIKit
 
 class PictureMemoGameEngine {
-    private var whatToGuessContainer: Set<GameElement> = []
-    private var whereToGuessContainer: Set<GameElement> = []
+    private var whatToGuessContainer: Set<PictureMemoGameElement> = []
+    private var whereToGuessContainer: Set<PictureMemoGameElement> = []
     private var finishedRounds: Int = 0
     private var numberOfFalseTaps: Int = 0
     private var gameDuration = GameDurations.sec60
@@ -56,11 +56,11 @@ class PictureMemoGameEngine {
         try initWhereToGuessContainer(with: getNumberOfWhereToGuess(basedOn: numberOfWhatToGuess))
     }
     
-    func getWhat() -> [GameElement] {
+    func getWhat() -> [PictureMemoGameElement] {
         return whatToGuessContainer.map { $0 }
     }
     
-    func getWhere() -> [GameElement] {
+    func getWhere() -> [PictureMemoGameElement] {
         return whereToGuessContainer.map { $0 }
     }
     
@@ -129,10 +129,10 @@ class PictureMemoGameEngine {
         numberOfFalseTaps = 0
     }
     
-    private func addNewItemTo(_ container: inout Set<GameElement>, of type: ContainerType, shouldBeHidden: Bool = true) {
-        var result: (inserted: Bool, memberAfterInsert: GameElement)
+    private func addNewItemTo(_ container: inout Set<PictureMemoGameElement>, of type: ContainerType, shouldBeHidden: Bool = true) {
+        var result: (inserted: Bool, memberAfterInsert: PictureMemoGameElement)
         repeat {
-            let newItem = GameElement(containerType: type, shouldBeHidden: shouldBeHidden)
+            let newItem = PictureMemoGameElement(containerType: type, shouldBeHidden: shouldBeHidden)
             result = container.insert(newItem)
         } while !result.inserted
     }
@@ -163,9 +163,9 @@ class PictureMemoGameEngine {
         }
         
         whatToGuessContainer.forEach( {
-            (element: GameElement) in
+            (element: PictureMemoGameElement) in
             
-            let newItem = GameElement(pictureItem: element.getItem(),
+            let newItem = PictureMemoGameElement(pictureItem: element.getItem(),
                                       containerType: .whereToGuess,
                                       shouldBeHidden: false
                                         )
