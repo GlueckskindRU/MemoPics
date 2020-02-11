@@ -17,13 +17,13 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lnH-rG-kVA">
-                        <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zi-jV-5MI">
-                                <rect key="frame" x="32" y="32" width="350" height="754"/>
+                                <rect key="frame" x="32" y="50" width="350" height="796"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="TA7-bF-kPt">
-                                        <rect key="frame" x="32" y="267" width="286" height="220"/>
+                                        <rect key="frame" x="32" y="288" width="286" height="220"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="naQ-cf-Vey">
                                                 <rect key="frame" x="0.0" y="0.0" width="286" height="60"/>
@@ -64,19 +64,19 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="1zi-jV-5MI" firstAttribute="top" secondItem="lnH-rG-kVA" secondAttribute="top" constant="50" id="VDJ-qe-gLW"/>
                             <constraint firstItem="1zi-jV-5MI" firstAttribute="leading" secondItem="lnH-rG-kVA" secondAttribute="leading" constant="32" id="ad6-SA-RrH"/>
                             <constraint firstAttribute="trailing" secondItem="1zi-jV-5MI" secondAttribute="trailing" constant="32" id="dUl-h1-7Pq"/>
-                            <constraint firstItem="1zi-jV-5MI" firstAttribute="top" secondItem="lnH-rG-kVA" secondAttribute="top" constant="32" id="n5S-5S-JoX"/>
-                            <constraint firstAttribute="bottom" secondItem="1zi-jV-5MI" secondAttribute="bottom" constant="32" id="qAF-XT-yHR"/>
+                            <constraint firstAttribute="bottom" secondItem="1zi-jV-5MI" secondAttribute="bottom" constant="50" id="fOi-Et-Exz"/>
                         </constraints>
                     </view>
                 </subviews>
                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 <constraints>
                     <constraint firstItem="ZlV-bF-Dvb" firstAttribute="trailing" secondItem="lnH-rG-kVA" secondAttribute="trailing" id="Jt5-oZ-R9j"/>
-                    <constraint firstItem="lnH-rG-kVA" firstAttribute="top" secondItem="ZlV-bF-Dvb" secondAttribute="top" id="Plg-Vv-1Lh"/>
+                    <constraint firstItem="lnH-rG-kVA" firstAttribute="top" secondItem="ZlV-bF-Dvb" secondAttribute="top" constant="-44" id="Plg-Vv-1Lh"/>
                     <constraint firstItem="lnH-rG-kVA" firstAttribute="leading" secondItem="ZlV-bF-Dvb" secondAttribute="leading" id="bf3-ZJ-fSC"/>
-                    <constraint firstItem="ZlV-bF-Dvb" firstAttribute="bottom" secondItem="lnH-rG-kVA" secondAttribute="bottom" id="nS0-sM-QUb"/>
+                    <constraint firstItem="ZlV-bF-Dvb" firstAttribute="bottom" secondItem="lnH-rG-kVA" secondAttribute="bottom" constant="-34" id="nS0-sM-QUb"/>
                 </constraints>
                 <viewLayoutGuide key="safeArea" id="ZlV-bF-Dvb"/>
             </view>
@@ -86,7 +86,7 @@
                 <outlet property="homeView" destination="1zi-jV-5MI" id="fH7-CY-fgD"/>
                 <outlet property="pictureMemoGameButton" destination="naQ-cf-Vey" id="Yoc-Us-VNe"/>
             </connections>
-            <point key="canvasLocation" x="188" y="108"/>
+            <point key="canvasLocation" x="186.95652173913044" y="107.8125"/>
         </viewController>
     </objects>
     <resources>
