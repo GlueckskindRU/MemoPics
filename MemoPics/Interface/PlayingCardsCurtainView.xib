@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="PAJ-vY-16a" customClass="PlayingCardsCurtainView" customModule="MemoPics" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="llo-zQ-sfL">
+                    <rect key="frame" x="40" y="423" width="334" height="50"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Sc2-eI-gMX"/>
+                    </constraints>
+                    <state key="normal" title="Start">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="startButtonTapped:" destination="PAJ-vY-16a" eventType="touchUpInside" id="JXc-Df-XfT"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pS6-So-0EI">
+                    <rect key="frame" x="40" y="505" width="334" height="325"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select difficulty of a game:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wpI-zv-hqL">
+                            <rect key="frame" x="16" y="16" width="302" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="dfo-G7-byb">
+                            <rect key="frame" x="98.5" y="53" width="137" height="32"/>
+                            <segments>
+                                <segment title="Easy"/>
+                                <segment title="Medium"/>
+                            </segments>
+                            <connections>
+                                <action selector="gameDifficultyChanged:" destination="PAJ-vY-16a" eventType="valueChanged" id="hCs-ZU-fLV"/>
+                            </connections>
+                        </segmentedControl>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the pack of cards" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agZ-0y-PUW">
+                            <rect key="frame" x="16" y="116" width="302" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="GFM-GA-ioE">
+                            <rect key="frame" x="16" y="153" width="302" height="32"/>
+                            <segments>
+                                <segment title="Full (52 cards)"/>
+                                <segment title="Short (36 cards)"/>
+                            </segments>
+                            <connections>
+                                <action selector="cardsPackChanged:" destination="PAJ-vY-16a" eventType="valueChanged" id="soE-ov-P7d"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstItem="GFM-GA-ioE" firstAttribute="leading" secondItem="pS6-So-0EI" secondAttribute="leading" constant="16" id="0Oz-zw-9Ie"/>
+                        <constraint firstItem="wpI-zv-hqL" firstAttribute="top" secondItem="pS6-So-0EI" secondAttribute="top" constant="16" id="F7G-OV-wYp"/>
+                        <constraint firstItem="agZ-0y-PUW" firstAttribute="leading" secondItem="pS6-So-0EI" secondAttribute="leading" constant="16" id="Fr9-dh-Ixh"/>
+                        <constraint firstItem="wpI-zv-hqL" firstAttribute="leading" secondItem="pS6-So-0EI" secondAttribute="leading" constant="16" id="Lza-ax-guq"/>
+                        <constraint firstItem="agZ-0y-PUW" firstAttribute="top" secondItem="dfo-G7-byb" secondAttribute="bottom" constant="32" id="MMG-yb-eTM"/>
+                        <constraint firstItem="dfo-G7-byb" firstAttribute="top" secondItem="wpI-zv-hqL" secondAttribute="bottom" constant="16" id="MVl-UE-iTR"/>
+                        <constraint firstItem="dfo-G7-byb" firstAttribute="centerX" secondItem="pS6-So-0EI" secondAttribute="centerX" id="Utu-Z4-6Mg"/>
+                        <constraint firstItem="GFM-GA-ioE" firstAttribute="centerX" secondItem="pS6-So-0EI" secondAttribute="centerX" id="YVn-9I-hly"/>
+                        <constraint firstItem="GFM-GA-ioE" firstAttribute="top" secondItem="agZ-0y-PUW" secondAttribute="bottom" constant="16" id="bPW-rX-jhC"/>
+                        <constraint firstItem="wpI-zv-hqL" firstAttribute="centerX" secondItem="pS6-So-0EI" secondAttribute="centerX" id="k5V-8e-iK2"/>
+                        <constraint firstItem="agZ-0y-PUW" firstAttribute="centerX" secondItem="pS6-So-0EI" secondAttribute="centerX" id="m76-db-gme"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o06-fz-c5o">
+                    <rect key="frame" x="40" y="76" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="91V-C2-crH"/>
+                        <constraint firstAttribute="height" constant="50" id="nM3-GO-BV7"/>
+                    </constraints>
+                    <state key="normal" image="Home"/>
+                    <connections>
+                        <action selector="homeButtonTapped:" destination="PAJ-vY-16a" eventType="touchUpInside" id="3OM-cx-10U"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D63-eK-9N0">
+                    <rect key="frame" x="40" y="76" width="334" height="315"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="D63-eK-9N0" firstAttribute="top" secondItem="drR-QH-P2m" secondAttribute="top" constant="32" id="Azt-0J-WEg"/>
+                <constraint firstItem="pS6-So-0EI" firstAttribute="leading" secondItem="llo-zQ-sfL" secondAttribute="leading" id="EpS-uc-lE0"/>
+                <constraint firstItem="llo-zQ-sfL" firstAttribute="centerX" secondItem="PAJ-vY-16a" secondAttribute="centerX" id="Gp5-FO-JvB"/>
+                <constraint firstItem="o06-fz-c5o" firstAttribute="top" secondItem="drR-QH-P2m" secondAttribute="top" constant="32" id="NMA-JX-Og9"/>
+                <constraint firstItem="drR-QH-P2m" firstAttribute="bottom" secondItem="pS6-So-0EI" secondAttribute="bottom" constant="32" id="OKk-Vn-j0w"/>
+                <constraint firstItem="o06-fz-c5o" firstAttribute="leading" secondItem="llo-zQ-sfL" secondAttribute="leading" id="OmS-ar-fcM"/>
+                <constraint firstItem="pS6-So-0EI" firstAttribute="top" secondItem="llo-zQ-sfL" secondAttribute="bottom" constant="32" id="ZnR-1d-ENd"/>
+                <constraint firstItem="pS6-So-0EI" firstAttribute="trailing" secondItem="llo-zQ-sfL" secondAttribute="trailing" id="gyz-7V-m3Q"/>
+                <constraint firstItem="D63-eK-9N0" firstAttribute="trailing" secondItem="llo-zQ-sfL" secondAttribute="trailing" id="idk-Uv-c2W"/>
+                <constraint firstItem="pS6-So-0EI" firstAttribute="centerX" secondItem="PAJ-vY-16a" secondAttribute="centerX" id="ku2-iw-UPV"/>
+                <constraint firstItem="llo-zQ-sfL" firstAttribute="leading" secondItem="drR-QH-P2m" secondAttribute="leading" constant="40" id="my1-Na-uGL"/>
+                <constraint firstItem="llo-zQ-sfL" firstAttribute="centerY" secondItem="PAJ-vY-16a" secondAttribute="centerY" id="qFS-a8-1Zh"/>
+                <constraint firstItem="llo-zQ-sfL" firstAttribute="top" secondItem="D63-eK-9N0" secondAttribute="bottom" constant="32" id="qV7-Dy-aiK"/>
+                <constraint firstItem="D63-eK-9N0" firstAttribute="leading" secondItem="llo-zQ-sfL" secondAttribute="leading" id="uVg-1f-2Jo"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="drR-QH-P2m"/>
+            <connections>
+                <outlet property="cardsPackLabel" destination="agZ-0y-PUW" id="4Gb-at-ZEw"/>
+                <outlet property="cardsPackSegmentedControl" destination="GFM-GA-ioE" id="sZ3-8G-Bqh"/>
+                <outlet property="gameDifficultySegmentedControl" destination="dfo-G7-byb" id="1xD-b4-v6j"/>
+                <outlet property="homeButton" destination="o06-fz-c5o" id="Awn-VH-Ys0"/>
+                <outlet property="resultsLabel" destination="D63-eK-9N0" id="sjg-pi-avA"/>
+                <outlet property="settingsLabel" destination="wpI-zv-hqL" id="Ood-Hh-tDG"/>
+                <outlet property="settingsView" destination="pS6-So-0EI" id="9YM-Fn-bNo"/>
+                <outlet property="startButton" destination="llo-zQ-sfL" id="Npd-MJ-QcK"/>
+            </connections>
+            <point key="canvasLocation" x="14" y="74"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Home" width="44" height="44"/>
+    </resources>
+</document>

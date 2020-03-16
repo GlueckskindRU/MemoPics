@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		DA074A8C238C768800CC1EF4 /* PictureMemoGameInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA074A8B238C768800CC1EF4 /* PictureMemoGameInterfaceController.swift */; };
 		DA074A8F238C7A2F00CC1EF4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA074A8E238C7A2F00CC1EF4 /* UIView.swift */; };
+		DA1B6B72240D7E68004F67F4 /* PlayingCardsButtonsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B6B71240D7E68004F67F4 /* PlayingCardsButtonsLayout.swift */; };
+		DA1B6B77240D8188004F67F4 /* KindOfPlayingCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B6B76240D8188004F67F4 /* KindOfPlayingCardButton.swift */; };
+		DA1B6B79240D830F004F67F4 /* PlayingCardsKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA1B6B78240D830F004F67F4 /* PlayingCardsKeyboardView.swift */; };
 		DA42261C23953543009367D3 /* AuxiliaryImageNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA42261B23953543009367D3 /* AuxiliaryImageNames.swift */; };
 		DA43E37823E044FC0021E523 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43E37723E044FC0021E523 /* UIViewController.swift */; };
 		DA43E37C23E1A85A0021E523 /* RecordsScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA43E37B23E1A85A0021E523 /* RecordsScale.swift */; };
@@ -18,15 +21,29 @@
 		DA4A185B23ED884100F915C4 /* StartingCountDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A185A23ED884100F915C4 /* StartingCountDownView.swift */; };
 		DA4A185D23ED915D00F915C4 /* StartingCountDownViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A185C23ED915D00F915C4 /* StartingCountDownViewDelegate.swift */; };
 		DA4A186123F18BC200F915C4 /* UIDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A186023F18BC200F915C4 /* UIDevice.swift */; };
-		DA816F2A23B537A30003FE03 /* CollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2923B537A30003FE03 /* CollectionViewDataSource.swift */; };
+		DA4A186323F2A84A00F915C4 /* CardsSuits.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A186223F2A84A00F915C4 /* CardsSuits.swift */; };
+		DA4A186523F2A93E00F915C4 /* PackOfCards.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A186423F2A93E00F915C4 /* PackOfCards.swift */; };
+		DA4A186723F2A98700F915C4 /* CardsNominal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A186623F2A98700F915C4 /* CardsNominal.swift */; };
+		DA4A186A23F2AAAF00F915C4 /* PlayingCardsGameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A186923F2AAAF00F915C4 /* PlayingCardsGameEngine.swift */; };
+		DA4A186C23F2AD2800F915C4 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A186B23F2AD2800F915C4 /* PlayingCard.swift */; };
+		DA4A187223F2E8FA00F915C4 /* CardsPlayingDifficulty.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A187123F2E8FA00F915C4 /* CardsPlayingDifficulty.swift */; };
+		DA4A187823F593D600F915C4 /* PlayingCardsKeyboardDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A187723F593D600F915C4 /* PlayingCardsKeyboardDelegate.swift */; };
+		DA4A187B23F59A3300F915C4 /* PlayingCardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A187A23F59A3300F915C4 /* PlayingCardButton.swift */; };
+		DA816F2A23B537A30003FE03 /* PictureMemoCollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2923B537A30003FE03 /* PictureMemoCollectionViewDataSource.swift */; };
 		DA816F2C23B658BF0003FE03 /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2B23B658BF0003FE03 /* UICollectionView.swift */; };
-		DA816F2E23B76A630003FE03 /* GameCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2D23B76A630003FE03 /* GameCollectionViewLayout.swift */; };
+		DA816F2E23B76A630003FE03 /* PictureMemoGameCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA816F2D23B76A630003FE03 /* PictureMemoGameCollectionViewLayout.swift */; };
 		DA9215F823CCA28300B31A12 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA9215F623CCA28300B31A12 /* Localizable.strings */; };
+		DA97D29123FC2335008A9744 /* PlayingCardsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA97D29023FC2335008A9744 /* PlayingCardsViewController.xib */; };
+		DA97D29323FC237E008A9744 /* PlayingCardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97D29223FC237E008A9744 /* PlayingCardsViewController.swift */; };
+		DA97D29523FC2586008A9744 /* PlayingCardsCurtainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA97D29423FC2586008A9744 /* PlayingCardsCurtainView.xib */; };
+		DA97D29723FC259B008A9744 /* PlayingCardsCurtainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97D29623FC259B008A9744 /* PlayingCardsCurtainView.swift */; };
+		DA97D29923FC3560008A9744 /* PlayingCardsCurtainViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97D29823FC3560008A9744 /* PlayingCardsCurtainViewDelegate.swift */; };
+		DA97D29B23FC6FF9008A9744 /* PlayingCardsGameInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA97D29A23FC6FF9008A9744 /* PlayingCardsGameInterfaceController.swift */; };
 		DAA0ECAB238C1F20003CDE21 /* PictureMemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0ECAA238C1F20003CDE21 /* PictureMemoViewController.swift */; };
 		DAA0ECAD238C4C90003CDE21 /* PictureMemoGameEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0ECAC238C4C90003CDE21 /* PictureMemoGameEngine.swift */; };
 		DAA0ECB0238C54BA003CDE21 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA0ECAF238C54BA003CDE21 /* AppError.swift */; };
 		DAA7D02423BF9424004DF608 /* ContainerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA7D02323BF9424004DF608 /* ContainerType.swift */; };
-		DAA7D02723C0CCD0004DF608 /* GameElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA7D02623C0CCD0004DF608 /* GameElement.swift */; };
+		DAA7D02723C0CCD0004DF608 /* PictureMemoGameElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA7D02623C0CCD0004DF608 /* PictureMemoGameElement.swift */; };
 		DAA7D02923C53484004DF608 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA7D02823C53484004DF608 /* UIButton.swift */; };
 		DAA7D02B23C535BC004DF608 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA7D02A23C535BC004DF608 /* UILabel.swift */; };
 		DAA7D02F23C7B94A004DF608 /* GameDurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA7D02E23C7B94A004DF608 /* GameDurations.swift */; };
@@ -42,12 +59,15 @@
 		DAEA58D123EAD86A0051E185 /* ColorNames.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAEA58D023EAD86A0051E185 /* ColorNames.swift */; };
 		DAEA58D723EAE2180051E185 /* HomeScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAEA58D623EAE2180051E185 /* HomeScreenViewController.xib */; };
 		DAEA58D923EAF6B50051E185 /* PictureMemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAEA58D823EAF6B50051E185 /* PictureMemoViewController.xib */; };
-		DAF12C6823AF3C42005B0F81 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF12C6723AF3C42005B0F81 /* CollectionViewCell.swift */; };
+		DAF12C6823AF3C42005B0F81 /* PictureMemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAF12C6723AF3C42005B0F81 /* PictureMemoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA074A8B238C768800CC1EF4 /* PictureMemoGameInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemoGameInterfaceController.swift; sourceTree = "<group>"; };
 		DA074A8E238C7A2F00CC1EF4 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		DA1B6B71240D7E68004F67F4 /* PlayingCardsButtonsLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardsButtonsLayout.swift; sourceTree = "<group>"; };
+		DA1B6B76240D8188004F67F4 /* KindOfPlayingCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindOfPlayingCardButton.swift; sourceTree = "<group>"; };
+		DA1B6B78240D830F004F67F4 /* PlayingCardsKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardsKeyboardView.swift; sourceTree = "<group>"; };
 		DA42261B23953543009367D3 /* AuxiliaryImageNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuxiliaryImageNames.swift; sourceTree = "<group>"; };
 		DA43E37723E044FC0021E523 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		DA43E37B23E1A85A0021E523 /* RecordsScale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsScale.swift; sourceTree = "<group>"; };
@@ -57,19 +77,33 @@
 		DA4A185A23ED884100F915C4 /* StartingCountDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingCountDownView.swift; sourceTree = "<group>"; };
 		DA4A185C23ED915D00F915C4 /* StartingCountDownViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartingCountDownViewDelegate.swift; sourceTree = "<group>"; };
 		DA4A186023F18BC200F915C4 /* UIDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDevice.swift; sourceTree = "<group>"; };
-		DA816F2923B537A30003FE03 /* CollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewDataSource.swift; sourceTree = "<group>"; };
+		DA4A186223F2A84A00F915C4 /* CardsSuits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsSuits.swift; sourceTree = "<group>"; };
+		DA4A186423F2A93E00F915C4 /* PackOfCards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackOfCards.swift; sourceTree = "<group>"; };
+		DA4A186623F2A98700F915C4 /* CardsNominal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsNominal.swift; sourceTree = "<group>"; };
+		DA4A186923F2AAAF00F915C4 /* PlayingCardsGameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardsGameEngine.swift; sourceTree = "<group>"; };
+		DA4A186B23F2AD2800F915C4 /* PlayingCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
+		DA4A187123F2E8FA00F915C4 /* CardsPlayingDifficulty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsPlayingDifficulty.swift; sourceTree = "<group>"; };
+		DA4A187723F593D600F915C4 /* PlayingCardsKeyboardDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardsKeyboardDelegate.swift; sourceTree = "<group>"; };
+		DA4A187A23F59A3300F915C4 /* PlayingCardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardButton.swift; sourceTree = "<group>"; };
+		DA816F2923B537A30003FE03 /* PictureMemoCollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemoCollectionViewDataSource.swift; sourceTree = "<group>"; };
 		DA816F2B23B658BF0003FE03 /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
-		DA816F2D23B76A630003FE03 /* GameCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameCollectionViewLayout.swift; sourceTree = "<group>"; };
+		DA816F2D23B76A630003FE03 /* PictureMemoGameCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemoGameCollectionViewLayout.swift; sourceTree = "<group>"; };
 		DA9215F323CC9AC100B31A12 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DA9215F523CC9ACC00B31A12 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		DA9215F723CCA28300B31A12 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA9215F923CCA4D300B31A12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DA9215FA23CCB9DA00B31A12 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DA97D29023FC2335008A9744 /* PlayingCardsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayingCardsViewController.xib; sourceTree = "<group>"; };
+		DA97D29223FC237E008A9744 /* PlayingCardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardsViewController.swift; sourceTree = "<group>"; };
+		DA97D29423FC2586008A9744 /* PlayingCardsCurtainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayingCardsCurtainView.xib; sourceTree = "<group>"; };
+		DA97D29623FC259B008A9744 /* PlayingCardsCurtainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardsCurtainView.swift; sourceTree = "<group>"; };
+		DA97D29823FC3560008A9744 /* PlayingCardsCurtainViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardsCurtainViewDelegate.swift; sourceTree = "<group>"; };
+		DA97D29A23FC6FF9008A9744 /* PlayingCardsGameInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardsGameInterfaceController.swift; sourceTree = "<group>"; };
 		DAA0ECAA238C1F20003CDE21 /* PictureMemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemoViewController.swift; sourceTree = "<group>"; };
 		DAA0ECAC238C4C90003CDE21 /* PictureMemoGameEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemoGameEngine.swift; sourceTree = "<group>"; };
 		DAA0ECAF238C54BA003CDE21 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		DAA7D02323BF9424004DF608 /* ContainerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerType.swift; sourceTree = "<group>"; };
-		DAA7D02623C0CCD0004DF608 /* GameElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameElement.swift; sourceTree = "<group>"; };
+		DAA7D02623C0CCD0004DF608 /* PictureMemoGameElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemoGameElement.swift; sourceTree = "<group>"; };
 		DAA7D02823C53484004DF608 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		DAA7D02A23C535BC004DF608 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		DAA7D02E23C7B94A004DF608 /* GameDurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDurations.swift; sourceTree = "<group>"; };
@@ -87,7 +121,7 @@
 		DAEA58D023EAD86A0051E185 /* ColorNames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorNames.swift; sourceTree = "<group>"; };
 		DAEA58D623EAE2180051E185 /* HomeScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeScreenViewController.xib; sourceTree = "<group>"; };
 		DAEA58D823EAF6B50051E185 /* PictureMemoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PictureMemoViewController.xib; sourceTree = "<group>"; };
-		DAF12C6723AF3C42005B0F81 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DAF12C6723AF3C42005B0F81 /* PictureMemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureMemoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +148,18 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		DA1B6B73240D7F3B004F67F4 /* PlayingCards */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A186223F2A84A00F915C4 /* CardsSuits.swift */,
+				DA4A186423F2A93E00F915C4 /* PackOfCards.swift */,
+				DA4A186623F2A98700F915C4 /* CardsNominal.swift */,
+				DA4A187123F2E8FA00F915C4 /* CardsPlayingDifficulty.swift */,
+				DA1B6B76240D8188004F67F4 /* KindOfPlayingCardButton.swift */,
+			);
+			path = PlayingCards;
+			sourceTree = "<group>";
+		};
 		DA4A185423ED6EAC00F915C4 /* GameConsts */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,16 +172,36 @@
 			isa = PBXGroup;
 			children = (
 				DA4A185A23ED884100F915C4 /* StartingCountDownView.swift */,
+				DA1B6B78240D830F004F67F4 /* PlayingCardsKeyboardView.swift */,
+				DA97D29623FC259B008A9744 /* PlayingCardsCurtainView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		DA4A186823F2AA7C00F915C4 /* PlayingCardsGame */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A186923F2AAAF00F915C4 /* PlayingCardsGameEngine.swift */,
+				DA97D29A23FC6FF9008A9744 /* PlayingCardsGameInterfaceController.swift */,
+				DA1B6B71240D7E68004F67F4 /* PlayingCardsButtonsLayout.swift */,
+			);
+			path = PlayingCardsGame;
+			sourceTree = "<group>";
+		};
+		DA4A187923F59A1500F915C4 /* UI Elements */ = {
+			isa = PBXGroup;
+			children = (
+				DA4A187A23F59A3300F915C4 /* PlayingCardButton.swift */,
+			);
+			path = "UI Elements";
 			sourceTree = "<group>";
 		};
 		DA816F2823B537860003FE03 /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
-				DA816F2D23B76A630003FE03 /* GameCollectionViewLayout.swift */,
-				DAF12C6723AF3C42005B0F81 /* CollectionViewCell.swift */,
-				DA816F2923B537A30003FE03 /* CollectionViewDataSource.swift */,
+				DA816F2D23B76A630003FE03 /* PictureMemoGameCollectionViewLayout.swift */,
+				DAF12C6723AF3C42005B0F81 /* PictureMemoCollectionViewCell.swift */,
+				DA816F2923B537A30003FE03 /* PictureMemoCollectionViewDataSource.swift */,
 			);
 			path = CollectionViews;
 			sourceTree = "<group>";
@@ -143,6 +209,7 @@
 		DAA0ECAE238C54A4003CDE21 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				DA1B6B73240D7F3B004F67F4 /* PlayingCards */,
 				DAE6B30D238BEA8700889902 /* ImagesNames.swift */,
 				DAA0ECAF238C54BA003CDE21 /* AppError.swift */,
 				DAA7D02323BF9424004DF608 /* ContainerType.swift */,
@@ -167,6 +234,7 @@
 		DAA0ECCE238C66E3003CDE21 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				DA4A187923F59A1500F915C4 /* UI Elements */,
 				DA4A185923ED882C00F915C4 /* Views */,
 				DA4A185423ED6EAC00F915C4 /* GameConsts */,
 				DAEA58CD23EAD6370051E185 /* Consts */,
@@ -179,6 +247,8 @@
 			isa = PBXGroup;
 			children = (
 				DA4A185C23ED915D00F915C4 /* StartingCountDownViewDelegate.swift */,
+				DA4A187723F593D600F915C4 /* PlayingCardsKeyboardDelegate.swift */,
+				DA97D29823FC3560008A9744 /* PlayingCardsCurtainViewDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -220,6 +290,8 @@
 				DAE6B2FE238BDB1100889902 /* LaunchScreen.storyboard */,
 				DAEA58D623EAE2180051E185 /* HomeScreenViewController.xib */,
 				DAEA58D823EAF6B50051E185 /* PictureMemoViewController.xib */,
+				DA97D29023FC2335008A9744 /* PlayingCardsViewController.xib */,
+				DA97D29423FC2586008A9744 /* PlayingCardsCurtainView.xib */,
 			);
 			path = Interface;
 			sourceTree = "<group>";
@@ -236,7 +308,8 @@
 			isa = PBXGroup;
 			children = (
 				DAE6B30A238BE61000889902 /* PictureItem.swift */,
-				DAA7D02623C0CCD0004DF608 /* GameElement.swift */,
+				DA4A186B23F2AD2800F915C4 /* PlayingCard.swift */,
+				DAA7D02623C0CCD0004DF608 /* PictureMemoGameElement.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -248,6 +321,7 @@
 				DA074A8D238C7A1500CC1EF4 /* Extensions */,
 				DAA0ECCE238C66E3003CDE21 /* UI */,
 				DAA0ECCD238C66DD003CDE21 /* PictureMemoGame */,
+				DA4A186823F2AA7C00F915C4 /* PlayingCardsGame */,
 				DAA0ECAE238C54A4003CDE21 /* Enums */,
 			);
 			path = Helpers;
@@ -269,6 +343,7 @@
 			children = (
 				DAEA58CB23EAD5430051E185 /* HomeScreenViewController.swift */,
 				DAA0ECAA238C1F20003CDE21 /* PictureMemoViewController.swift */,
+				DA97D29223FC237E008A9744 /* PlayingCardsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -336,8 +411,10 @@
 				DAE6B300238BDB1100889902 /* LaunchScreen.storyboard in Resources */,
 				DAEA58D923EAF6B50051E185 /* PictureMemoViewController.xib in Resources */,
 				DA9215F823CCA28300B31A12 /* Localizable.strings in Resources */,
+				DA97D29123FC2335008A9744 /* PlayingCardsViewController.xib in Resources */,
 				DAEA58D723EAE2180051E185 /* HomeScreenViewController.xib in Resources */,
 				DAE6B2FD238BDB1100889902 /* Assets.xcassets in Resources */,
+				DA97D29523FC2586008A9744 /* PlayingCardsCurtainView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,7 +426,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAA7D02923C53484004DF608 /* UIButton.swift in Sources */,
-				DAA7D02723C0CCD0004DF608 /* GameElement.swift in Sources */,
+				DAA7D02723C0CCD0004DF608 /* PictureMemoGameElement.swift in Sources */,
 				DAA0ECAD238C4C90003CDE21 /* PictureMemoGameEngine.swift in Sources */,
 				DAA7D03123C7BBFA004DF608 /* SettingsController.swift in Sources */,
 				DA43E38023E1BE310021E523 /* RecordsCalculation.swift in Sources */,
@@ -358,26 +435,41 @@
 				DAA7D02B23C535BC004DF608 /* UILabel.swift in Sources */,
 				DA43E37823E044FC0021E523 /* UIViewController.swift in Sources */,
 				DAA0ECB0238C54BA003CDE21 /* AppError.swift in Sources */,
+				DA4A186C23F2AD2800F915C4 /* PlayingCard.swift in Sources */,
 				DAEA58CC23EAD5430051E185 /* HomeScreenViewController.swift in Sources */,
+				DA4A186523F2A93E00F915C4 /* PackOfCards.swift in Sources */,
 				DAE6B30E238BEA8700889902 /* ImagesNames.swift in Sources */,
+				DA4A186A23F2AAAF00F915C4 /* PlayingCardsGameEngine.swift in Sources */,
 				DAA7D02F23C7B94A004DF608 /* GameDurations.swift in Sources */,
+				DA97D29923FC3560008A9744 /* PlayingCardsCurtainViewDelegate.swift in Sources */,
 				DA42261C23953543009367D3 /* AuxiliaryImageNames.swift in Sources */,
 				DA816F2C23B658BF0003FE03 /* UICollectionView.swift in Sources */,
 				DAA7D03323C7BD86004DF608 /* AuxiliaryStringKeys.swift in Sources */,
+				DA4A186323F2A84A00F915C4 /* CardsSuits.swift in Sources */,
+				DA4A186723F2A98700F915C4 /* CardsNominal.swift in Sources */,
 				DAEA58D123EAD86A0051E185 /* ColorNames.swift in Sources */,
+				DA1B6B77240D8188004F67F4 /* KindOfPlayingCardButton.swift in Sources */,
 				DA4A185623ED6ED600F915C4 /* PictureMemoGameConsts.swift in Sources */,
 				DA43E37C23E1A85A0021E523 /* RecordsScale.swift in Sources */,
+				DA1B6B79240D830F004F67F4 /* PlayingCardsKeyboardView.swift in Sources */,
 				DAA7D02423BF9424004DF608 /* ContainerType.swift in Sources */,
 				DA43E37E23E1AD6B0021E523 /* RecordsScaleTitle.swift in Sources */,
-				DAF12C6823AF3C42005B0F81 /* CollectionViewCell.swift in Sources */,
+				DAF12C6823AF3C42005B0F81 /* PictureMemoCollectionViewCell.swift in Sources */,
 				DA4A186123F18BC200F915C4 /* UIDevice.swift in Sources */,
 				DAEA58CF23EAD64C0051E185 /* LayoutConsts.swift in Sources */,
+				DA4A187B23F59A3300F915C4 /* PlayingCardButton.swift in Sources */,
+				DA97D29723FC259B008A9744 /* PlayingCardsCurtainView.swift in Sources */,
 				DAA0ECAB238C1F20003CDE21 /* PictureMemoViewController.swift in Sources */,
-				DA816F2E23B76A630003FE03 /* GameCollectionViewLayout.swift in Sources */,
+				DA816F2E23B76A630003FE03 /* PictureMemoGameCollectionViewLayout.swift in Sources */,
 				DAE6B30B238BE61000889902 /* PictureItem.swift in Sources */,
+				DA4A187223F2E8FA00F915C4 /* CardsPlayingDifficulty.swift in Sources */,
 				DA074A8F238C7A2F00CC1EF4 /* UIView.swift in Sources */,
 				DA074A8C238C768800CC1EF4 /* PictureMemoGameInterfaceController.swift in Sources */,
-				DA816F2A23B537A30003FE03 /* CollectionViewDataSource.swift in Sources */,
+				DA97D29B23FC6FF9008A9744 /* PlayingCardsGameInterfaceController.swift in Sources */,
+				DA97D29323FC237E008A9744 /* PlayingCardsViewController.swift in Sources */,
+				DA1B6B72240D7E68004F67F4 /* PlayingCardsButtonsLayout.swift in Sources */,
+				DA816F2A23B537A30003FE03 /* PictureMemoCollectionViewDataSource.swift in Sources */,
+				DA4A187823F593D600F915C4 /* PlayingCardsKeyboardDelegate.swift in Sources */,
 				DA4A185D23ED915D00F915C4 /* StartingCountDownViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -529,7 +621,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 3BEPD83256;
 				INFOPLIST_FILE = MemoPics/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -549,7 +641,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = 3BEPD83256;
 				INFOPLIST_FILE = MemoPics/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;

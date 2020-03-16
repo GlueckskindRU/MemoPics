@@ -51,7 +51,7 @@ class PictureMemoGameInterfaceController {
     lazy fileprivate var settingsTitleLabel: UILabel = {
         let label = UILabel()
         
-        label.setup(with: NSLocalizedString("SettingsTitle.Label", comment: "Text.Label"))
+        label.setup(with: NSLocalizedString("Settings.PictureMemo.Title.Label", comment: "Text.Label"))
         label.numberOfLines = 0
         
         return label
@@ -335,7 +335,7 @@ extension PictureMemoGameInterfaceController {
     @objc
     fileprivate func durationSegmentedControlChanged(sender: UISegmentedControl) {
         settingsController.setNewGameDuration(GameDurations.allCases[sender.selectedSegmentIndex])
-        settingsController.saveGameDuration()
+        settingsController.saveSettings()
         
         refreshGameDuration()
     }

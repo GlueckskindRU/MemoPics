@@ -13,6 +13,9 @@
 /* ErrorHandle */
 "incorrectCountValue.ErrorText" = "Установлено отрицательное количество загадываемых элементов.";
 
+/* ErrorHandle */
+"playingCardSettingsNotAvailable.ErrorText" = "Не указаны значения настроек по умолчанию";
+
 /* Title.Button */
 "PictureMemGame.Button" = "Запоминание картинок";
 
@@ -25,8 +28,20 @@
 /* Title.Button */
 "Save.Button" = "Сохранить";
 
+/* Title.Button */
+"OpenFirstCard.Button" = "Открыть следующую карту";
+
+/* Title.Button */
+"Submit.Button" = "Принять";
+
 /* Text.Label */
-"SettingsTitle.Label" = "Выберите длительность игры в секундах";
+"Settings.PictureMemo.Title.Label" = "Выберите длительность игры в секундах";
+
+/* Text.Label */
+"Settings.PlayingCards.Difficulty.Title.Label" = "Выберите уровень сложности";
+
+/* Text.Label */
+"Settings.PlayingCards.PackOfCards.Title.Label" = "Выберите колоду";
 
 /* Title.Button */
 "Start.Button" = "Начать";
@@ -39,6 +54,12 @@
 
 /* Text.Label */
 "TotalTaps.Label" = "Общее количество попыток";
+
+/* Text.Label */
+"TotalTime.Label" = "Время";
+
+/* Text.Label */
+"TotalSuccessRounds.Label" = "Успешно";
 
 /* Text.Label.Result */
 "SameResult.Label" = "Результат подтверждён";
@@ -56,3 +77,18 @@
 "student" = "Студент";
 "matriculant" = "Абитуриент";
 "novice" = "Новичок";
+
+/* Text.Label */
+"CardNominal.Short.Ace" = "Т";
+"CardNominal.Short.King" = "К";
+"CardNominal.Short.Queen" = "Д";
+"CardNominal.Short.Jack" = "В";
+
+/* SegmentedControl.Title */
+"PlayingCardDifficuty.Easy" = "Лёгкий";
+"PlayingCardDifficuty.Medium" = "Средний";
+"PlayingCardDifficuty.Hard" = "Сложный";
+
+/* SegmentedControl.Title */
+"PackOfCards.Full" = "52 карты";
+"PackOfCards.Short" = "36 карты";

@@ -13,6 +13,9 @@
 /* ErrorHandle */
 "incorrectCountValue.ErrorText" = "The negative number of hidden elements has been set.";
 
+/* ErrorHandle */
+"playingCardSettingsNotAvailable.ErrorText" = "No default settings specified";
+
 /* Title.Button */
 "PictureMemGame.Button" = "Picture memorization";
 
@@ -25,8 +28,20 @@
 /* Title.Button */
 "Save.Button" = "Save";
 
+/* Title.Button */
+"OpenFirstCard.Button" = "Open the next card";
+
+/* Title.Button */
+"Submit.Button" = "Submit";
+
 /* Text.Label */
-"SettingsTitle.Label" = "Select the length of the game in seconds";
+"Settings.PictureMemo.Title.Label" = "Select the length of the game in seconds";
+
+/* Text.Label */
+"Settings.PlayingCards.Difficulty.Title.Label" = "Select a difficulty level";
+
+/* Text.Label */
+"Settings.PlayingCards.PackOfCards.Title.Label" = "Select a pack";
 
 /* Title.Button */
 "Start.Button" = "Start";
@@ -39,6 +54,12 @@
 
 /* Text.Label */
 "TotalTaps.Label" = "Total number of attempts";
+
+/* Text.Label */
+"TotalTime.Label" = "Time";
+
+/* Text.Label */
+"TotalSuccessRounds.Label" = "Successfully";
 
 /* Text.Label.Result */
 "SameResult.Label" = "Result confirmed";
@@ -56,3 +77,18 @@
 "student" = "Student";
 "matriculant" = "Matriculant";
 "novice" = "Novice";
+
+/* Text.Label */
+"CardNominal.Short.Ace" = "A";
+"CardNominal.Short.King" = "K";
+"CardNominal.Short.Queen" = "Q";
+"CardNominal.Short.Jack" = "J";
+
+/* SegmentedControl.Title */
+"PlayingCardDifficuty.Easy" = "Easy";
+"PlayingCardDifficuty.Medium" = "Medium";
+"PlayingCardDifficuty.Hard" = "Hard";
+
+/* SegmentedControl.Title */
+"PackOfCards.Full" = "52 cards";
+"PackOfCards.Short" = "36 cards";

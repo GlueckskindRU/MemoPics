@@ -23,7 +23,11 @@ class HomeScreenViewController: UIViewController {
     }
 
     @IBAction func cardsMemoGameButtonTapped(_ sender: UIButton) {
-        showDialog(title: nil, message: NSLocalizedString("cardsMemorizing.Message", comment: "CardsMemorizing.Title"))
+        if let playingCardsVC = Bundle.main.loadNibNamed(String(describing: PlayingCardsViewController.self), owner: nil, options: nil)?.first as? PlayingCardsViewController {
+            playingCardsVC.modalTransitionStyle = .crossDissolve
+            playingCardsVC.modalPresentationStyle = .fullScreen
+            present(playingCardsVC, animated: true, completion: nil)
+        }
     }
 
     override func viewDidLoad() {

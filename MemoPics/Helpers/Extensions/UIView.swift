@@ -47,4 +47,12 @@ extension UIView {
             subview.removeFromSuperview()
         }
     }
+    
+    func loadingAfterAwaking() -> UIView? {
+        guard subviews.isEmpty else {
+            return self
+        }
+
+        return Bundle.main.loadNibNamed(String(describing: type(of: self)), owner: nil, options: nil)?.first as? UIView
+    }
 }
