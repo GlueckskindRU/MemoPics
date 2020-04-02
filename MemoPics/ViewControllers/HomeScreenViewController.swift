@@ -41,7 +41,9 @@ class HomeScreenViewController: UIViewController {
         homeView.layer.cornerRadius = LayoutConsts.cornerRadius
         pictureMemoGameButton.setTitle(NSLocalizedString("PictureMemGame.Button", comment: "Title.Button"), for: .normal)
         pictureMemoGameButton.layer.cornerRadius = LayoutConsts.cornerRadius
-        cardsMemoGameButton.setTitle(NSLocalizedString("CardsMemoGame.Button", comment: "Title.Button"), for: .normal)
-        cardsMemoGameButton.layer.cornerRadius = LayoutConsts.cornerRadius
+//        cardsMemoGameButton.setTitle(NSLocalizedString("CardsMemoGame.Button", comment: "Title.Button"), for: .normal)
+//        cardsMemoGameButton.layer.cornerRadius = LayoutConsts.cornerRadius
+        cardsMemoGameButton.isHidden = true
+        cardsMemoGameButton.isEnabled = false
     }
 }
