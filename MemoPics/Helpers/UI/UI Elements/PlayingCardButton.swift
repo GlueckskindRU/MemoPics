@@ -42,16 +42,6 @@ final class PlayingCardButton: UIButton {
         }
     }
     
-//    public var isButtonEnabled: Bool = true {
-//        didSet {
-//            if isButtonEnabled {
-//                setButtonAsEnabled()
-//            } else {
-//                setButtonAsNotEnabled()
-//            }
-//        }
-//    }
-    
     public var kind: KindOfPlayingCardButton = .space
     public var nominal: CardsNominal?
     public var suit: CardsSuits?
@@ -75,11 +65,6 @@ final class PlayingCardButton: UIButton {
         setTitleColor(.black, for: .normal)
     }
     
-//    private func setButtonAsEnabled() {
-//        setButtonAsUnselected()
-//        self.isEnabled = true
-//    }
-//
     private func setButtonAsNotEnabled() {
         backgroundColor = .clear
         setTitleColor(.gray, for: .normal)
