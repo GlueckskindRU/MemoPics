@@ -138,7 +138,6 @@ class PictureMemoGameInterfaceController {
             
             gameEngine.increaseNumberOfGuessedItems(for: element.getItem())
             if gameEngine.isRoundFinished() {
-                UIDevice.vibrate()
                 gameEngine.finishCurrentRound()
                 do {
                     try startNewRound()
